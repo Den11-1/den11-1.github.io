@@ -1,0 +1,149 @@
+.make-a-note {
+  background-color: #fefffb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.make-a-note .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.make-a-note .date {
+  position: absolute;
+  width: 248px;
+  height: 104px;
+  top: 119px;
+  left: 16px;
+}
+
+.make-a-note .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--clear-green);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.make-a-note .text-wrapper-2 {
+  position: absolute;
+  width: 244px;
+  height: 67px;
+  top: 37px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.make-a-note .arrow {
+  position: absolute;
+  width: 32px;
+  height: 15px;
+  top: 67px;
+  left: 14px;
+}
+
+.make-a-note .line {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  top: 253px;
+  left: 16px;
+}
+
+.make-a-note .export {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 59px;
+  left: 347px;
+  object-fit: cover;
+}
+
+.make-a-note .overlap-group {
+  position: absolute;
+  width: 271px;
+  height: 54px;
+  top: 764px;
+  left: 62px;
+  background-color: var(--text);
+  border-radius: 12px;
+}
+
+.make-a-note .view {
+  position: relative;
+  width: 232px;
+  height: 33px;
+  top: 10px;
+  left: 20px;
+}
+
+.make-a-note .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: var(--background);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.make-a-note .checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 38px;
+  object-fit: cover;
+}
+
+.make-a-note .list {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 81px;
+  object-fit: cover;
+}
+
+.make-a-note .paper-clip {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 124px;
+  object-fit: cover;
+}
+
+.make-a-note .pen {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 167px;
+  object-fit: cover;
+}
+
+.make-a-note .voice {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 210px;
+  object-fit: cover;
+}

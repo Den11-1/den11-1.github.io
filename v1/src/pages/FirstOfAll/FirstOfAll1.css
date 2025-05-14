@@ -1,0 +1,195 @@
+.first-of-all {
+  background-color: #fefffb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.first-of-all .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.first-of-all .text-wrapper {
+  position: absolute;
+  top: 76px;
+  left: 16px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.first-of-all .let-your-notes-find {
+  position: absolute;
+  width: 336px;
+  top: 353px;
+  left: 16px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: transparent;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.first-of-all .span {
+  color: #001a23;
+  line-height: 57px;
+}
+
+.first-of-all .text-wrapper-2 {
+  color: #000000;
+  line-height: 57px;
+}
+
+.first-of-all .text-wrapper-3 {
+  color: #7a9e7e;
+  line-height: 57px;
+}
+
+.first-of-all .buttons {
+  position: absolute;
+  width: 361px;
+  height: 124px;
+  top: 588px;
+  left: 16px;
+}
+
+.first-of-all .create {
+  display: flex;
+  width: 361px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 58px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--g-3);
+  border-radius: 12px;
+}
+
+.first-of-all .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.first-of-all .frame {
+  display: flex;
+  width: 361px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 58px;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  background-color: #b3efb280;
+  border-radius: 12px;
+}
+
+.first-of-all .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.first-of-all .lorem-ipsum-has-been {
+  position: absolute;
+  width: 362px;
+  top: 761px;
+  left: 16px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #31493c4c;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+/* Original CSS code should be injected here */
+
+.first-of-all {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  max-width: 393px;
+  width: 100%;
+  padding: 76px 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.text-wrapper {
+  margin: 0;
+  font-size: 36px;
+}
+
+.let-your-notes-find {
+  margin-top: 277px;
+  max-width: 336px;
+}
+
+.buttons {
+  margin-top: 235px;
+}
+
+.create,
+.frame {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create:hover {
+  background-color: #2a3f33;
+}
+
+.frame:hover {
+  background-color: #a3dfb270;
+}
+
+.lorem-ipsum-has-been {
+  margin-top: 49px;
+}
+
+@media (max-width: 393px) {
+  .div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .let-your-notes-find,
+  .buttons,
+  .lorem-ipsum-has-been {
+    margin-top: 0;
+  }
+}

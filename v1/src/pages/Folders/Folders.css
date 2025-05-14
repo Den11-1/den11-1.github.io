@@ -1,0 +1,284 @@
+.folders {
+  background-color: #fefffb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.folders .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.folders .head {
+  position: absolute;
+  width: 363px;
+  height: 50px;
+  top: 54px;
+  left: 16px;
+}
+
+.folders .user-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 311px;
+}
+
+.folders .text-wrapper {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .date {
+  position: absolute;
+  width: 248px;
+  height: 104px;
+  top: 124px;
+  left: 16px;
+}
+
+.folders .text-wrapper-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--clear-green);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .text-wrapper-3 {
+  position: absolute;
+  width: 244px;
+  height: 67px;
+  top: 37px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .search {
+  display: flex;
+  width: 361px;
+  height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  position: absolute;
+  top: 248px;
+  left: 16px;
+  background-color: #31493c1a;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: #31493c4c;
+}
+
+.folders .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #001a234c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.folders .overlap {
+  position: absolute;
+  width: 361px;
+  height: 529px;
+  top: 323px;
+  left: 16px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.folders .div-2 {
+  position: absolute;
+  width: 361px;
+  height: 529px;
+  top: 0;
+  left: 0;
+  background-color: var(--text);
+  border-radius: 12px 12px 0px 0px;
+}
+
+.folders .text-wrapper-5 {
+  position: absolute;
+  width: 161px;
+  height: 67px;
+  top: 19px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #fefffb;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .studying {
+  position: absolute;
+  width: 323px;
+  height: 30px;
+  top: 107px;
+  left: 21px;
+}
+
+.folders .line {
+  position: absolute;
+  width: 3px;
+  height: 33px;
+  top: -2px;
+  left: -2px;
+}
+
+.folders .text-wrapper-6 {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--background);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .arrow {
+  position: absolute;
+  width: 24px;
+  height: 13px;
+  top: 9px;
+  left: 298px;
+}
+
+.folders .studying-2 {
+  position: absolute;
+  width: 323px;
+  height: 30px;
+  top: 157px;
+  left: 21px;
+}
+
+.folders .studying-3 {
+  position: absolute;
+  width: 323px;
+  height: 30px;
+  top: 207px;
+  left: 21px;
+}
+
+.folders .nav {
+  position: absolute;
+  width: 271px;
+  height: 54px;
+  top: 441px;
+  left: 45px;
+  background-color: #31493c4c;
+  border-radius: 12px;
+}
+
+.folders .overlap-group {
+  position: relative;
+  width: 249px;
+  height: 54px;
+}
+
+.folders .rectangle {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  top: 0;
+  left: 0;
+  background-color: #7a9e7e4c;
+  border-radius: 12px;
+}
+
+.folders .nav-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}
+
+.folders .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.folders .line-2 {
+  position: absolute;
+  width: 4px;
+  height: 221px;
+  top: 369px;
+  left: 383px;
+}
+
+.folders .new {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 170px;
+  left: 327px;
+  background-color: var(--text);
+  border-radius: 25px;
+}
+
+.folders .overlap-2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top: 9px;
+  left: 9px;
+}
+
+.folders .line-3 {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  top: 0;
+  left: 16px;
+}
+
+.folders .line-4 {
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  top: 14px;
+  left: 0;
+}

@@ -1,0 +1,197 @@
+.get-started {
+  background-color: #fefffb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.get-started .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.get-started .app {
+  position: absolute;
+  width: 179px;
+  height: 60px;
+  top: 242px;
+  left: 108px;
+}
+
+.get-started .logo {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: 4px;
+  left: 0;
+  background-color: var(--g-3);
+  border-radius: 9px;
+}
+
+.get-started .ellipse {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 16px;
+  left: 16px;
+  background-color: var(--background);
+  border-radius: 10.2px;
+}
+
+.get-started .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 72px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--text);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.get-started .frame {
+  display: flex;
+  width: 361px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 58px;
+  position: absolute;
+  top: 766px;
+  left: 16px;
+  background-color: var(--g-3);
+  border-radius: 12px;
+}
+
+.get-started .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.get-started .fiatures {
+  position: absolute;
+  width: 312px;
+  height: 294px;
+  top: 352px;
+  left: 41px;
+}
+
+.get-started .secure-w-icon {
+  position: absolute;
+  width: 300px;
+  height: 78px;
+  top: 108px;
+  left: 0;
+}
+
+.get-started .secure {
+  position: absolute;
+  width: 254px;
+  height: 78px;
+  top: 0;
+  left: 50px;
+}
+
+.get-started .p {
+  position: absolute;
+  width: 250px;
+  top: 34px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #31493c80;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.get-started .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.get-started .img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.get-started .reminders-w-icon {
+  position: absolute;
+  width: 312px;
+  height: 78px;
+  top: 216px;
+  left: 0;
+}
+
+.get-started .reminders {
+  position: absolute;
+  width: 266px;
+  height: 78px;
+  top: 0;
+  left: 50px;
+}
+
+.get-started .text-wrapper-4 {
+  position: absolute;
+  width: 262px;
+  top: 34px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #31493c80;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.get-started .sync-w-icon {
+  position: absolute;
+  width: 276px;
+  height: 78px;
+  top: 0;
+  left: 0;
+}
+
+.get-started .sync {
+  position: absolute;
+  width: 230px;
+  height: 78px;
+  top: 0;
+  left: 50px;
+}
+
+.get-started .text-wrapper-5 {
+  position: absolute;
+  width: 226px;
+  top: 34px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #31493c80;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}

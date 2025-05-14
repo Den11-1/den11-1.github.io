@@ -1,0 +1,61 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,600");
+
+/* @font-face {
+    font-family: "Comic Sans MS";
+    src: url('../fonts/ComicSansMS.ttf') format('truetype');
+  } */
+
+:root {
+  --text: rgba(0, 26, 35, 1);
+  --clear-green: rgba(49, 73, 60, 0.3);
+  --background: rgba(254, 255, 252, 1);
+  --g-1: rgba(179, 239, 178, 1);
+  --g-2: rgba(122, 158, 126, 1);
+  --g-3: rgba(49, 73, 60, 1);
+}
+
+
+html {  
+    height: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column; */
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
