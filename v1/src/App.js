@@ -1,8 +1,6 @@
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./assets/styles/style.css";
 
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';  
 import FirstOfAll from "./pages/FirstOfAll/FirstOfAll.js";
 import SignIn from "./pages/SignIn/SignIn.js";
 import LogIn from "./pages/LogIn/LogIn.js";
@@ -17,7 +15,6 @@ export default function App() {
   return (
     <>
       <Router>
-        {/* <Header /> */}
         <Routes>
           <Route exact path="/" element={<FirstOfAll />} />
           <Route path="/sign_in" element={<SignIn />} />
@@ -29,8 +26,6 @@ export default function App() {
           <Route path="/open_folders" element={<OpenFolders />} />
           <Route path="/make_a_note" element={<MakeANote />} />
         </Routes>
-        {/* <Footer /> */}
-        
       </Router>
     </>
   );

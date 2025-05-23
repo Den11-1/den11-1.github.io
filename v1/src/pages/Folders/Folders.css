@@ -115,7 +115,7 @@
   height: 529px;
   top: 323px;
   left: 16px;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .folders .div-2 {
@@ -125,7 +125,7 @@
   top: 0;
   left: 0;
   background-color: var(--text);
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .folders .text-wrapper-5 {
