@@ -26,7 +26,7 @@ export default function Folders() {
                             <img class="arrow" src="https://c.animaapp.com/maodp9luJPrwVp/img/arrow.png" />
                         </div></Link>
                         <div class="studying-2">
-                            <img class="line" src="https://c.animaapp.com/maodp9luJPrwVp/img/line-4.svg" />
+                            <img class="line" src="https://c.animaapp.com/maoer0laEidg9o/img/line-4.svg" />
                             <div class="text-wrapper-6">traveling</div>
                             <img class="arrow" src="https://c.animaapp.com/maodp9luJPrwVp/img/arrow-1.png" />
                         </div>
