@@ -1,8 +1,11 @@
 import './Home.css';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOptions';
 
 export default function Home() {
+    const [is_visible_additional_options, setIs_visible_additional_options] = useState(false);
+
     const today = new Date();
 
     const options = {
@@ -22,10 +25,12 @@ export default function Home() {
 
 
     return (
+        <>
+        {is_visible_additional_options ? <AdditionalOptions setIs_visible_additional_options={setIs_visible_additional_options}/> : null}
         <div class="home">
             <div class="div">
                 <div class="head">
-                    <Link to="/additional_options"><img class="user-icon" src="https://c.animaapp.com/maodbhnhX64j70/img/user-icon.png" /></Link>
+                    <img class="user-icon" src="https://c.animaapp.com/maodbhnhX64j70/img/user-icon.png" onClick={() => setIs_visible_additional_options(true)}/>
                     <div class="text-wrapper">entry</div>
                 </div>
                 <div class="date">
@@ -79,5 +84,6 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

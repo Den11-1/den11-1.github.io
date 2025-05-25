@@ -1,12 +1,18 @@
 import './OpenFolders.css';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOptions';
 
 export default function OpenFolders() {
+    const [is_visible_additional_options, setIs_visible_additional_options] = useState(false);
+
     return (
+        <>
+        {is_visible_additional_options ? <AdditionalOptions setIs_visible_additional_options={setIs_visible_additional_options}/> : null}
         <div class="open-folders">
             <div class="div">
                 <div class="head">
-                    <Link to="/additional_options"><img class="user-icon" src="https://c.animaapp.com/maoer0laEidg9o/img/user-icon.png" /></Link>
+                    <img class="user-icon" src="https://c.animaapp.com/maoer0laEidg9o/img/user-icon.png" onClick={() => setIs_visible_additional_options(true)}/>
                     <div class="text-wrapper">entry</div>
                 </div>
                 <div class="date">
@@ -74,5 +80,6 @@ export default function OpenFolders() {
                 </div></Link>
             </div>
         </div>
+        </>
     );
 }
