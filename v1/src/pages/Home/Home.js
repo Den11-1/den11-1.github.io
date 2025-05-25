@@ -2,9 +2,11 @@ import './Home.css';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOptions';
+import HomeFolders from '../../components/HomeFolders/HomeFolders';  
 
 export default function Home() {
     const [is_visible_additional_options, setIs_visible_additional_options] = useState(false);
+    const [is_visible_home_folders, setIs_visible_home_folders] = useState(true);
 
     const today = new Date();
 
@@ -26,6 +28,7 @@ export default function Home() {
 
     return (
         <>
+        {is_visible_home_folders ? <HomeFolders setIs_visible_home_folders={setIs_visible_home_folders}/> : null}
         {is_visible_additional_options ? <AdditionalOptions setIs_visible_additional_options={setIs_visible_additional_options}/> : null}
         <div class="home">
             <div class="div">
@@ -53,34 +56,6 @@ export default function Home() {
                         onChange={handleChange}
                     />
                     <img class="search_input_img" src="https://c.animaapp.com/maodbhnhX64j70/img/search-1.png" />
-                </div>
-                {/* <div class="search">
-                    <div class="text-wrapper-4">Find loosen one...</div>
-                    <img class="search-2" src="https://c.animaapp.com/maodbhnhX64j70/img/search-1.png" />
-                </div> */}
-                <div class="frame">
-                    <img class="arrow-2" src="https://c.animaapp.com/maodbhnhX64j70/img/arrow.png" />
-                    <div class="text-wrapper-5">my notes</div>
-                    <div class="text-wrapper-6">Sat, 12 Apr</div>
-                    <div class="overlap">
-                        <div class="reminders">
-                            <img class="arrow-2" src="https://c.animaapp.com/maodbhnhX64j70/img/arrow.png" />
-                            <div class="text-wrapper-7">reminders</div>
-                            <div class="text-wrapper-8">No reminders</div>
-                        </div>
-                        <div class="calendar">
-                            <img class="arrow-2" src="https://c.animaapp.com/maodbhnhX64j70/img/arrow-1.png" />
-                            <div class="text-wrapper-9">calendar</div>
-                            <div class="text-wrapper-10">April</div>
-                            <div class="navigation">
-                                <div class="nav">
-                                    <Link to="/folders"><div class="text-wrapper-11">folders</div></Link>
-                                    <div class="text-wrapper-11">tags</div>
-                                    <div class="text-wrapper-11">locations</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

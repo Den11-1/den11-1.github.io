@@ -1,0 +1,285 @@
+.homeFolders {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.homeFolders .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.homeFolders .frame {
+  position: absolute;
+  width: 361px;
+  height: 183px;
+  top: 322px;
+  left: 16px;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(51, 76, 63, 1) 0%,
+    rgba(0, 26, 35, 1) 100%
+  );
+
+  z-index: 5;
+}
+
+.homeFolders .arrow {
+  position: absolute;
+  width: 22px;
+  height: 11px;
+  top: 48px;
+  left: 319px;
+}
+
+.homeFolders .overlap-group-2 {
+  position: relative;
+  width: 21px;
+  height: 12px;
+  top: -1px;
+}
+
+.homeFolders .line-2 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  top: 0;
+  left: 0;
+}
+
+.homeFolders .line-3 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  top: 0;
+  left: 10px;
+}
+
+.homeFolders .text-wrapper-5 {
+  position: absolute;
+  width: 215px;
+  height: 67px;
+  top: 19px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--background);
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homeFolders .text-wrapper-6 {
+  position: absolute;
+  top: 96px;
+  left: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(254, 255, 252, 1) 0%,
+    rgba(9, 35, 40, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homeFolders .overlap {
+  position: absolute;
+  width: 361px;
+  height: 389px;
+  top: 141px;
+  left: 0;
+}
+
+.homeFolders .reminders {
+  position: absolute;
+  width: 361px;
+  height: 169px;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(179, 239, 178, 1) 0%,
+    rgba(103, 137, 102, 1) 100%
+  );
+}
+
+.homeFolders .arrow-2 {
+  position: absolute;
+  width: 24px;
+  height: 13px;
+  top: 46px;
+  left: 318px;
+}
+
+.homeFolders .text-wrapper-7 {
+  position: absolute;
+  width: 236px;
+  height: 67px;
+  top: 19px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #fefffb;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homeFolders .text-wrapper-8 {
+  position: absolute;
+  top: 96px;
+  left: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(254, 255, 252, 1) 0%,
+    rgba(117, 152, 121, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homeFolders .calendar {
+  position: absolute;
+  width: 361px;
+  height: 248px;
+  top: 141px;
+  left: 0;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(122, 158, 126, 1) 0%,
+    rgba(51, 76, 63, 1) 100%
+  );
+}
+
+.homeFolders .text-wrapper-9 {
+  position: absolute;
+  width: 217px;
+  height: 67px;
+  top: 19px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #fefffb;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homeFolders .text-wrapper-10 {
+  position: absolute;
+  width: 87px;
+  height: 49px;
+  top: 96px;
+  left: 22px;
+  background: linear-gradient(
+    180deg,
+    rgba(254, 255, 252, 1) 0%,
+    rgba(51, 76, 63, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: transparent;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homeFolders .navigation {
+  position: absolute;
+  width: 271px;
+  height: 54px;
+  top: 160px;
+  left: 45px;
+  background-color: var(--text);
+  border-radius: 12px;
+}
+
+.homeFolders .nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  top: 15px;
+  left: 21px;
+}
+
+.homeFolders .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+
+/* Мої зміни */
+
+.search_input {
+  display: flex;
+  width: 361px;
+  height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #31493c1a;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: #31493c4c;
+
+  
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #001a234c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+
+  border: none; /* При потребі */
+  background: transparent; /* Якщо хочеш без фону */
+  outline: none; /* Щоб прибрати синю рамку при фокусі */
+}
+
+.search_input_img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  right: -300px;
+}
