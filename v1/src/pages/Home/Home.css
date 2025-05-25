@@ -70,7 +70,7 @@
   font-family: "Poppins", Helvetica;
   font-weight: 600;
   color: var(--text);
-  font-size: 44px;
+  font-size: 40px;/* 44px */
   letter-spacing: 0;
   line-height: normal;
 }
@@ -369,4 +369,44 @@
   font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
+}
+
+
+
+/* Мої зміни */
+
+.search_input {
+  display: flex;
+  width: 361px;
+  height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #31493c1a;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: #31493c4c;
+
+  
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #001a234c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+
+  border: none; /* При потребі */
+  background: transparent; /* Якщо хочеш без фону */
+  outline: none; /* Щоб прибрати синю рамку при фокусі */
+}
+
+.search_input_img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  right: -300px;
 }
