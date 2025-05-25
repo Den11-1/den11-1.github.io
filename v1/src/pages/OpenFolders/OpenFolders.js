@@ -26,7 +26,7 @@ export default function OpenFolders() {
                             <Link to="/home"><div class="text-wrapper-8">folders</div></Link>
                             <Link to="/folders"><div class="studying">
                                 <img class="arrow" src="https://c.animaapp.com/maoer0laEidg9o/img/arrow.png" />
-                                <img class="line" src="https://c.animaapp.com/maodp9luJPrwVp/img/line-4.svg" />
+                                <img class="line" src="/images/Line_r.svg" />
                                 <div class="text-wrapper-9">studying</div>
                                 <div class="paragraph">
                                     <p class="p">when an unknown printer took a galley of type and scrambled...</p>
@@ -44,12 +44,12 @@ export default function OpenFolders() {
                                 </div>
                             </div></Link>
                             <div class="studying-2">
-                                <img class="line" src="https://c.animaapp.com/maoer0laEidg9o/img/line-4.svg" />
+                                <img class="line" src="/images/Line_g.svg" />
                                 <div class="text-wrapper-9">traveling</div>
                                 <img class="arrow-2" src="https://c.animaapp.com/maoer0laEidg9o/img/arrow-1.png" />
                             </div>
                             <div class="studying-3">
-                                <img class="line" src="https://c.animaapp.com/maoer0laEidg9o/img/line-4.svg" />
+                                <img class="line" src="/images/Line_y.svg" />
                                 <div class="text-wrapper-9">hobby</div>
                                 <img class="arrow-2" src="https://c.animaapp.com/maoer0laEidg9o/img/arrow-2.png" />
                             </div>
