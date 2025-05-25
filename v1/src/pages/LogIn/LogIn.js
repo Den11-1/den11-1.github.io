@@ -88,7 +88,7 @@ export default function LogIn() {
                   src={
                     showPassword
                       ? "https://c.animaapp.com/mb18h967WZb8A8/img/eye-1.png"
-                        : "../../assets/images/hidden.jpg"
+                        : "/images/hidden.png"
                   }
                   alt={showPassword ? "Hide password" : "Show password"}
                   style={{ cursor: "pointer" }}
