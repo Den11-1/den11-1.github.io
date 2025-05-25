@@ -1,7 +1,6 @@
 import './Home.css';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOptions';
 
 export default function Home() {
     const today = new Date();
@@ -24,8 +23,6 @@ export default function Home() {
 
     return (
         <div class="home">
-            <AdditionalOptions />
-
             <div class="div">
                 <div class="head">
                     <Link to="/additional_options"><img class="user-icon" src="https://c.animaapp.com/maodbhnhX64j70/img/user-icon.png" /></Link>
