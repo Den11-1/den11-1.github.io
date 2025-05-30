@@ -1,7 +1,24 @@
 import './FirstOfAll.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../../firebase";
+import { useState, useEffect } from 'react';
+import { onAuthStateChanged } from "firebase/auth";
 
 export default function FirstOfAll() {
+    const navigate = useNavigate();
+    
+    useEffect(() => {
+        // Відстеження автентифікації користувача
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                navigate("/home");
+            }
+        });
+
+        // loadComments(setComments, setLoading);
+        return () => unsubscribe();
+    }, []);
+
     return (
         <div class="first-of-all">
             <div class="div">
