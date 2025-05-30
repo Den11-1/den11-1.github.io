@@ -88,11 +88,11 @@ export default function SignIn() {
                     className="eye"
                     onClick={() => setShowPassword((prev) => !prev)}
                     src={
-                      showPassword
+                      !showPassword
                         ? "https://c.animaapp.com/mb18h967WZb8A8/img/eye-1.png"
-                        : "/images/hidden.png" 
+                        : "/v1/build/images/hidden.png" 
                     }
-                    alt={showPassword ? "Hide password" : "Show password"}
+                    alt={!showPassword ? "Hide password" : "Show password"}
                     style={{ cursor: "pointer" }}
                   />
                 </div>
