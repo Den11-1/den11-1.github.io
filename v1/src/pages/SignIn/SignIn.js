@@ -25,7 +25,7 @@ export default function SignIn() {
         password
       );
       console.log("Користувача зареєстровано:", userCredential.user);
-      navigate("/");
+      navigate("/get_started");
     } catch (err) {
       console.error("Помилка реєстрації:", err);
       setError(err.message);

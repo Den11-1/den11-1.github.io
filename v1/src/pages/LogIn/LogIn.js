@@ -20,7 +20,7 @@ export default function LogIn() {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log("Користувача увійшов:", userCredential.user);
-      navigate("/get_started"); 
+      navigate("/home"); 
     } catch (err) {
       console.error("Помилка входу:", err);
       if (err.code === "auth/invalid-credential") {
