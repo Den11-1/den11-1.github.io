@@ -42,17 +42,19 @@
 }
 
 .additional-options .user-name {
-  width: 189px;
+  width: 100%;
   top: 124px;
-  left: 41px;
+  /* left: 41px; */
   position: absolute;
   height: 50px;
 }
 
 .additional-options .text-wrapper-10 {
   position: absolute;
+  width: 100%;
+  text-align: center;
   top: 0;
-  left: 25px;
+  /* left: 25px; */
   font-family: "Poppins", Helvetica;
   font-weight: 600;
   color: var(--text);
@@ -63,8 +65,10 @@
 
 .additional-options .text-wrapper-11 {
   position: absolute;
+  width: 100%;
+  text-align: center;
   top: 32px;
-  left: 0;
+  /* left: 0; */
   font-family: "Poppins", Helvetica;
   font-weight: 500;
   color: #001a234c;

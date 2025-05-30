@@ -1,12 +1,28 @@
 import './Home.css';
-import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOptions';
 import HomeFolders from '../../components/HomeFolders/HomeFolders';  
+import { auth } from "../../firebase";
+import { useState, useEffect } from 'react';
+import { onAuthStateChanged } from "firebase/auth";
 
 export default function Home() {
     const [is_visible_additional_options, setIs_visible_additional_options] = useState(false);
     const [is_visible_home_folders, setIs_visible_home_folders] = useState(true);
+
+    const [currentUser, setCurrentUser] = useState(null);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Відстеження автентифікації користувача
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+        setCurrentUser(user);
+        });
+
+        // loadComments(setComments, setLoading);
+        return () => unsubscribe();
+    }, []);
 
     const today = new Date();
 
@@ -29,7 +45,7 @@ export default function Home() {
     return (
         <>
         {is_visible_home_folders ? <HomeFolders setIs_visible_home_folders={setIs_visible_home_folders}/> : null}
-        {is_visible_additional_options ? <AdditionalOptions setIs_visible_additional_options={setIs_visible_additional_options}/> : null}
+        {is_visible_additional_options ? <AdditionalOptions currentUser={currentUser} setIs_visible_additional_options={setIs_visible_additional_options}/> : null}
         <div class="home">
             <div class="div">
                 <div class="head">
