@@ -35,7 +35,7 @@ export default function Home() {
     const formattedDate = today.toLocaleDateString('en-US', options);
     console.log(formattedDate); // "Tue, 15 Apr"
 
-    const [text, setText] = useState("Find loosen one..."); // Стан для тексту
+    const [text, setText] = useState(""); // Стан для тексту
 
     const handleChange = (event) => {
         setText(event.target.value); // Оновлення стану при зміні
@@ -66,6 +66,7 @@ export default function Home() {
                 <div class="search">
                     <input 
                         class="search_input"
+                        placeholder="Find loosen one..."
                         type="text"
                         id="serach"
                         name="search"

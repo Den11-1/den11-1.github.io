@@ -375,7 +375,7 @@
 
 /* Мої зміни */
 
-.search_input {
+.home .search_input {
   display: flex;
   width: 361px;
   height: 54px;
@@ -393,17 +393,17 @@
   
   font-family: "Poppins", Helvetica, sans-serif;
   font-weight: 500;
-  color: #001a234c;
+  color: #001a23;
   font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
-
-  border: none; /* При потребі */
-  background: transparent; /* Якщо хочеш без фону */
-  outline: none; /* Щоб прибрати синю рамку при фокусі */
 }
 
-.search_input_img {
+.home .search_input:placeholder-shown {
+    color: #001a234c;
+}
+
+.home .search_input_img {
   position: relative;
   width: 20px;
   height: 20px;
