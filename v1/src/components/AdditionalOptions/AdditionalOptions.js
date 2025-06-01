@@ -29,7 +29,7 @@ export default function AdditionalOptions({currentUser, setIs_visible_additional
                         </div>
                         <div class="text-wrapper-12">Notes</div>
                         <div class="text-wrapper-13">Calendar</div>
-                        <div class="text-wrapper-14">Manege Lists</div>
+                        <div class="text-wrapper-14">Manage Lists</div>
                         <div class="text-wrapper-15">Settings</div>
                         <div class="text-wrapper-16">Support</div>
                         <div class="text-wrapper-17" onClick={handleLogout}>Log Out</div>
