@@ -1,7 +1,7 @@
 import './HomeFolders.css';
 import { Link } from "react-router-dom";
 
-export default function HomeFolders({setIs_visible_home_folders}) {
+export default function HomeFolders({setTab}) {
     return (
         <div class="homeFolders">
             <div class="div">
@@ -19,13 +19,6 @@ export default function HomeFolders({setIs_visible_home_folders}) {
                             <img class="arrow-2" src="https://c.animaapp.com/maodbhnhX64j70/img/arrow-1.png" />
                             <div class="text-wrapper-9">calendar</div>
                             <div class="text-wrapper-10">April</div>
-                            <div class="navigation">
-                                <div class="nav">
-                                    <Link to="/folders"><div class="text-wrapper-11">folders</div></Link>
-                                    <div class="text-wrapper-11">tags</div>
-                                    <div class="text-wrapper-11">locations</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,17 @@
 import './Home.css';
 import { Link, useNavigate } from "react-router-dom";
 import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOptions';
-import HomeFolders from '../../components/HomeFolders/HomeFolders';  
+import HomeFolders from '../../components/HomeFolders/HomeFolders';
+import FoldersComponent from '../../components/FoldersComponent/FoldersComponent';
+import NavBar from '../../components/NavBar/NavBar';
 import { auth } from "../../firebase";
 import { useState, useEffect } from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 
 export default function Home() {
     const [is_visible_additional_options, setIs_visible_additional_options] = useState(false);
-    const [is_visible_home_folders, setIs_visible_home_folders] = useState(true);
+    const [is_visible_home_folders, setIs_visible_home_folders] = useState(false);
+    const [is_visible_folders_component, setIs_visible_folders_component] = useState(false);
 
     const [currentUser, setCurrentUser] = useState(null);
 
@@ -41,10 +44,13 @@ export default function Home() {
         setText(event.target.value); // Оновлення стану при зміні
     };
 
+    const [tab, setTab] = useState(0);
 
     return (
         <>
-        {is_visible_home_folders ? <HomeFolders setIs_visible_home_folders={setIs_visible_home_folders}/> : null}
+        <NavBar tab={tab} setTab={setTab}/>
+        {tab == 0 ? <HomeFolders setTab={setTab}/> : null}
+        {tab == 1 ? <FoldersComponent setTab={setTab}/> : null}
         {is_visible_additional_options ? <AdditionalOptions currentUser={currentUser} setIs_visible_additional_options={setIs_visible_additional_options}/> : null}
         <div class="home">
             <div class="div">
