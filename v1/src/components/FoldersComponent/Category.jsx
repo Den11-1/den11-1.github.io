@@ -12,14 +12,13 @@ export default function Category({ category }) {
 
     return (
         <div class='category'>
-            <div class="category-head">
+            <div class="category-head" onClick={() => setIsVisibleNotes(!is_visible_notes)}>
                 <div class="title-category">
                     <img class="line" src={`/v1/build/images/Line_${color}.svg`} />
                     <div class="title">{category.title}</div>
                 </div>
                 <img class="arrow"
-                    src={is_visible_notes ? "https://c.animaapp.com/maoer0laEidg9o/img/arrow.png" : "https://c.animaapp.com/maodp9luJPrwVp/img/arrow.png"}
-                    onClick={() => setIsVisibleNotes(!is_visible_notes)} />
+                    src={is_visible_notes ? "https://c.animaapp.com/maoer0laEidg9o/img/arrow.png" : "https://c.animaapp.com/maodp9luJPrwVp/img/arrow.png"} />
             </div>
             {is_visible_notes ? category.notes.map((note, index) => (
                 <Note note={note} />
