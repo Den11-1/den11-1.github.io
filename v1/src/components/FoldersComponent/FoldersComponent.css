@@ -1,0 +1,190 @@
+.foldersComponent {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.foldersComponent .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.foldersComponent .overlap {
+  position: absolute;
+  width: 361px;
+  height: 529px;
+  top: 323px;
+  left: 16px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 5;
+}
+
+.foldersComponent .div-2 {
+  position: absolute;
+  width: 361px;
+  height: 529px;
+  top: 0;
+  left: 0;
+  background-color: var(--text);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.foldersComponent .text-wrapper-5 {
+  position: absolute;
+  width: 161px;
+  height: 67px;
+  top: 19px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #fefffb;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.foldersComponent .studying {
+  position: absolute;
+  width: 323px;
+  height: 30px;
+  top: 107px;
+  left: 21px;
+}
+
+.foldersComponent .line {
+  position: absolute;
+  width: 4px;
+  height: 33px;
+  top: -2px;
+  left: -2px;
+}
+
+.foldersComponent .text-wrapper-6 {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--background);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.foldersComponent .arrow {
+  position: absolute;
+  width: 24px;
+  height: 13px;
+  top: 9px;
+  left: 298px;
+}
+
+.foldersComponent .studying-2 {
+  position: absolute;
+  width: 323px;
+  height: 30px;
+  top: 157px;
+  left: 21px;
+}
+
+.foldersComponent .studying-3 {
+  position: absolute;
+  width: 323px;
+  height: 30px;
+  top: 207px;
+  left: 21px;
+}
+
+.foldersComponent .nav {
+  position: absolute;
+  width: 271px;
+  height: 54px;
+  top: 441px;
+  left: 45px;
+  background-color: #31493c4c;
+  border-radius: 12px;
+}
+
+.foldersComponent .overlap-group {
+  position: relative;
+  width: 249px;
+  height: 54px;
+}
+
+.foldersComponent .rectangle {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  top: 0;
+  left: 0;
+  background-color: #7a9e7e4c;
+  border-radius: 12px;
+}
+
+.foldersComponent .nav-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}
+
+.foldersComponent .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.foldersComponent .line-2 {
+  position: absolute;
+  width: 4px;
+  height: 221px;
+  top: 369px;
+  left: 383px;
+}
+
+.foldersComponent .new {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 170px;
+  left: 327px;
+  background-color: var(--text);
+  border-radius: 25px;
+}
+
+.foldersComponent .overlap-2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top: 9px;
+  left: 9px;
+}
+
+.foldersComponent .line-3 {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  top: 0;
+  left: 16px;
+}
+
+.foldersComponent .line-4 {
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  top: 14px;
+  left: 0;
+}
