@@ -1,0 +1,142 @@
+.navBar {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.navBar .div {
+  background-color: var(--background);
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.navBar .overlap {
+  position: absolute;
+  width: 361px;
+  height: 529px;
+  top: 323px;
+  left: 16px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.navBar .nav {
+  position: absolute;
+  width: 271px;
+  height: 54px;
+  top: 441px;
+  left: 45px;
+  background-color: var(--text);
+  border-radius: 12px;
+  z-index: 7;
+}
+
+.navBar .tabs {
+  background-color: #31493c4c;
+}
+
+.navBar .overlap-group {
+  position: relative;
+  width: 271px;
+  height: 54px;
+}
+
+.navBar .selected-0 {
+  display: none;
+}
+
+.navBar .selected-1 {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  top: 0;
+  left: 0;
+  background-color: #7a9e7e4c;
+  border-radius: 12px;
+}
+
+.navBar .selected-2 {
+  position: absolute;
+  width: 70px;
+  height: 54px;
+  top: 0;
+  left: 90px;
+  background-color: #7a9e7e4c;
+  border-radius: 12px;
+}
+
+.navBar .selected-3 {
+  position: absolute;
+  width: 120px;
+  height: 54px;
+  top: 0;
+  right: 0;
+  background-color: #7a9e7e4c;
+  border-radius: 12px;
+}
+
+.navBar .nav-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}
+
+.navBar .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.navBar .line-2 {
+  position: absolute;
+  width: 4px;
+  height: 221px;
+  top: 369px;
+  left: 383px;
+}
+
+.navBar .new {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 170px;
+  left: 327px;
+  background-color: var(--text);
+  border-radius: 25px;
+}
+
+.navBar .overlap-2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top: 9px;
+  left: 9px;
+}
+
+.navBar .line-3 {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  top: 0;
+  left: 16px;
+}
+
+.navBar .line-4 {
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  top: 14px;
+  left: 0;
+}
