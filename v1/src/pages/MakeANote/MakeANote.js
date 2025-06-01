@@ -7,15 +7,15 @@ export default function MakeANote() {
 
     useEffect(() => {
         const date = new Date();
-        const options: Intl.DateTimeFormatOptions = { weekday: 'short', day: 'numeric', month: 'short' };
+        const options = { weekday: 'short', day: 'numeric', month: 'short' };
         const formattedDate = date.toLocaleDateString('en-US', options);
         setCurrentDate(formattedDate);
     }, []);
 
-    const [note, setNote] = useState(""); // Стан для тексту нотатки
+    const [note, setNote] = useState(""); // State for note text
 
-    const handleNoteChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setNote(event.target.value); // Оновлення тексту нотатки
+    const handleNoteChange = (event) => {
+        setNote(event.target.value); // Update note text
     };
 
     return (
