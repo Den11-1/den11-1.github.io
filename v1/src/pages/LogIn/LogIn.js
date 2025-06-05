@@ -74,7 +74,7 @@ export default function LogIn() {
                       background: "none",
                       border: "none",
                       outline: "none",
-                      color: "var(--clear-green)",
+                      color: "#001a23",
                       fontFamily: "Poppins, Helvetica",
                       fontWeight: "500",
                       fontSize: "16px",
@@ -97,11 +97,6 @@ export default function LogIn() {
               <div className="text-wrapper-2">Password</div>
             </div>
           </div>
-          {error && (
-            <p style={{ color: "red", fontSize: "14px", marginTop: "8px" }}>
-              {error}
-            </p>
-          )}
           <div
             className="acception"
             onClick={() => setAcceptTerms((prev) => !prev)}
@@ -117,7 +112,7 @@ export default function LogIn() {
           </div>
           <div className="buttons">
             <div
-              className="div-wrapper"
+              className={`div-wrapper${error ? " sign-in-btn-error" : ""}`}
               onClick={handleLogin}
               style={{ cursor: "pointer" }}
             >

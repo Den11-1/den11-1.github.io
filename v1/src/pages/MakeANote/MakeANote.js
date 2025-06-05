@@ -1,4 +1,9 @@
 import './MakeANote.css';
+import { useEffect } from "react";
+import { collection, getDocs, query, where, updateDoc, doc } from "firebase/firestore";
+import { db } from "../../firebase";
+
+import './MakeANote.css'; 
 import { Link } from "react-router-dom";
 
 export default function MakeANote() {
@@ -26,3 +31,58 @@ export default function MakeANote() {
         </div>
     );
 }
+// Додає нову нотатку для поточного користувача
+// async function addNoteForCurrentUser(content) {
+//     const user = auth.currentUser;
+//     if (!user) {
+//         console.log("Користувач не авторизований");
+//         return;
+//     }
+//     const usersRef = collection(db, "Users");
+//     const q = query(usersRef, where("email", "==", user.email));
+//     const querySnapshot = await getDocs(q);
+//     if (!querySnapshot.empty) {
+//         const userDoc = querySnapshot.docs[0];
+//         const userDocRef = doc(db, "Users", userDoc.id);
+//         const data = userDoc.data();
+//         const noteId = `note_${Date.now()}`;
+//         const newNote = {
+//             content,
+//             date: new Date().toISOString(),
+//             folder: "",
+//             tags: [],
+//             title: "",
+//         };
+//         const updatedNotes = {
+//             ...(data.notes || {}),
+//             [noteId]: newNote
+//         };
+//         await updateDoc(userDocRef, { notes: updatedNotes });
+//         console.log("Нова нотатка додана!");
+//     } else {
+//         console.log(`Користувача з email ${user.email} не знайдено`);
+//     }
+// }
+
+// // Виводить всі нотатки поточного користувача в консоль
+// async function showAllNotesForCurrentUser() {
+//     const user = auth.currentUser;
+//     if (!user) {
+//         console.log("Користувач не авторизований");
+//         return;
+//     }
+//     const usersRef = collection(db, "Users");
+//     const q = query(usersRef, where("email", "==", user.email));
+//     const querySnapshot = await getDocs(q);
+//     if (!querySnapshot.empty) {
+//         const userDoc = querySnapshot.docs[0];
+//         const data = userDoc.data();
+//         if (data.notes && typeof data.notes === "object") {
+//             const notes = Object.values(data.notes);
+//             console.log(`Всі нотатки користувача ${user.email}:`, notes);
+//             return notes;
+//         }
+//     }
+//     console.log(`Нотаток для ${user.email} не знайдено`);
+//     return [];
+// }

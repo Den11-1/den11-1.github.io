@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { getFirestore, doc, setDoc } from "firebase/firestore";
 import "./SignIn.css";
+
+const db = getFirestore();
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -18,12 +21,32 @@ export default function SignIn() {
       setError("Будь ласка, прийміть умови та політику конфіденційності.");
       return;
     }
+    if (password.length < 8) {
+    setError("Пароль має містити мінімум 8 символів.");
+    return;
+  }
     try {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
         password
       );
+      const user = userCredential.user;
+
+      await setDoc(doc(db, "Users", user.uid), {
+        name: email.split("@")[0], 
+        email: user.email,
+        notes: {
+          folder: "",
+          tags: [],
+          title: "",
+          content: "",
+          date: new Date(),
+        },
+        reminders: "",
+        calendar: "",
+      });
+
       console.log("Користувача зареєстровано:", userCredential.user);
       navigate("/get_started");
     } catch (err) {
@@ -51,7 +74,7 @@ export default function SignIn() {
             <div className="forms">
               <div className="email">
                 <input
-                  className="input"
+                  className={`input${error ? " input-error" : ""}`}
                   placeholder="Your email"
                   type="email"
                   id="input-1"
@@ -76,7 +99,7 @@ export default function SignIn() {
                         background: "none",
                         border: "none",
                         outline: "none",
-                        color: "var(--clear-green)",
+                        color: "#001a23",
                         fontFamily: "Poppins, Helvetica",
                         fontWeight: "500",
                         fontSize: "16px",
@@ -97,7 +120,6 @@ export default function SignIn() {
                   />
                 </div>
                 <p className="p">Use at least 8 characters</p>
-                {error && <p className="error">{error}</p>}
               </div>
             </div>
             <div
@@ -116,10 +138,10 @@ export default function SignIn() {
               </p>
             </div>
             <div className="buttons">
-              <div className="div-wrapper">
+              <div className={`div-wrapper${error ? " sign-in-btn-error" : ""}`}>
                 <button
                   type="submit"
-                  className="text-wrapper-5"
+                  className="text-wrapper-5 sign-in-btn"
                   style={{
                     background: "transparent",
                     border: "none",
