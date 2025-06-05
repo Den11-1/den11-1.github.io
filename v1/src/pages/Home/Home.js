@@ -8,6 +8,7 @@ import { auth } from "../../firebase";
 import { useState, useEffect } from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 
+
 export default function Home() {
     const [is_visible_additional_options, setIs_visible_additional_options] = useState(false);
     const [tab, setTab] = useState(0);

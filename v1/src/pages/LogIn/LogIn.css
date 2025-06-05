@@ -80,10 +80,17 @@
   margin-top: -1.00px;
   font-family: "Poppins", Helvetica;
   font-weight: 500;
-  color: var(--clear-green);
+  color: #001a23;
   font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.div-wrapper.sign-in-btn-error {
+  background: #ffeaea !important;
+}
+.div-wrapper.sign-in-btn-error .text-wrapper-4 {
+  color: #e53935 !important;
 }
 
 .log-in .text-wrapper-2 {
