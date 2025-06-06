@@ -36,15 +36,9 @@ export default function SignIn() {
       await setDoc(doc(db, "Users", user.uid), {
         name: email.split("@")[0], 
         email: user.email,
-        notes: {
-          folder: "",
-          tags: [],
-          title: "",
-          content: "",
-          date: new Date(),
-        },
-        reminders: "",
-        calendar: "",
+        notes: {},
+        reminders: {},
+        calendar: {},
       });
 
       console.log("Користувача зареєстровано:", userCredential.user);
@@ -112,7 +106,7 @@ export default function SignIn() {
                     onClick={() => setShowPassword((prev) => !prev)}
                     src={
                       !showPassword
-                        ? "https://c.animaapp.com/mb18h967WZb8A8/img/eye-1.png"
+                        ? "/v1/build/images/eye.png"
                         : "/v1/build/images/hidden.png" 
                     }
                     alt={!showPassword ? "Hide password" : "Show password"}
