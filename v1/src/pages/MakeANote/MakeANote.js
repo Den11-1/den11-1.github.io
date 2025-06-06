@@ -63,7 +63,7 @@ export default function MakeANote() {
                             className="note-content"
                             rows={5}
                         />
-                        <button type="submit" className="note-save-btn">Зберегти нотатку</button>
+        
                         {message && <div className="note-message">{message}</div>}
                     </form>
                 </div>
