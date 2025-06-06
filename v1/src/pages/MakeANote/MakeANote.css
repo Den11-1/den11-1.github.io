@@ -147,3 +147,51 @@
   left: 210px;
   object-fit: cover;
 }
+.note-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    background: #fff;
+    padding: 24px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+}
+
+.note-title, .note-content {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.note-save-btn {
+    padding: 10px 0;
+    border-radius: 6px;
+    border: none;
+    background: #5B7FFF;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.note-save-btn:hover {
+    background: #4665c5;
+}
+
+.note-message {
+    margin-top: 8px;
+    color: #006400;
+    font-weight: bold;
+    text-align: center;
+}
+
