@@ -179,6 +179,11 @@
     resize: none;
 }
 
+.note-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
 .note-title::placeholder,
 .note-content::placeholder {
     color: #b0b0b0;
