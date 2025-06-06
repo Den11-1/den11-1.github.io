@@ -1,7 +1,7 @@
 import './MakeANote.css';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { addNoteForCurrentUser } from "./addNoteForCurrentUser";
+import { addNoteForCurrentUser } from "../../firebase"; // Імпортуємо функцію для додавання нотатки
 
 export default function MakeANote() {
     const [title, setTitle] = useState("");
@@ -24,17 +24,27 @@ export default function MakeANote() {
         }
     };
 
+    const today = new Date();
+
+    const options = {
+    weekday: 'short',   // "Tue"
+    day: '2-digit',     // "15"
+    month: 'short'      // "Apr"
+    };
+
+    const formattedDate = today.toLocaleDateString('en-US', options);
+
     return (
         <div className="make-a-note">
             <div className="div">
                 <div className="date">
                     <div className="text-wrapper">Today</div>
-                    <div className="text-wrapper-2">Tue, 15 Apr</div>
+                    <div className="text-wrapper-2">{formattedDate}</div>
                 </div>
                 <Link to="/home">
                     <img className="arrow" src="https://c.animaapp.com/maoez0i4MW0y0J/img/arrow-1.svg" alt="Back" />
                 </Link>
-                <img className="line" src="https://c.animaapp.com/maoez0i4MW0y0J/img/line-9.svg" alt="Line" />
+                {/* <img className="line" src="https://c.animaapp.com/maoez0i4MW0y0J/img/line-9.svg" alt="Line" /> */}
                 <img className="export" src="https://c.animaapp.com/maoez0i4MW0y0J/img/export-1.png" alt="Export" />
                 <div className="overlap-group">
                     <div className="view">
@@ -51,13 +61,13 @@ export default function MakeANote() {
                     <form className="note-form" onSubmit={handleSubmit}>
                         <input
                             type="text"
-                            placeholder="Заголовок"
+                            placeholder=""
                             value={title}
                             onChange={(e) => setTitle(e.target.value)}
                             className="note-title"
                         />
                         <textarea
-                            placeholder="Ваша нотатка..."
+                            placeholder=""
                             value={content}
                             onChange={(e) => setContent(e.target.value)}
                             className="note-content"

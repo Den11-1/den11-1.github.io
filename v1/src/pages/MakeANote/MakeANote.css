@@ -148,17 +148,19 @@
   object-fit: cover;
 }
 .note-form-wrapper {
+    position: absolute;
+    top: 240px;
+    left: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 48px; /* більше відступу вниз після "15 Apr" */
 }
 
 .note-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 350px;
+    width: 330px;
     padding: 0;
     background: transparent;
     border: none;
