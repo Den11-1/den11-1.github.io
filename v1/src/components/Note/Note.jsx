@@ -1,3 +1,5 @@
+import "./Note.css";
+
 export default function Note({ note }) {
     return (
         <div class="note">

@@ -1,0 +1,45 @@
+.note {
+  width: 280px;
+  margin-left: 20px;
+  margin-bottom: 20px
+}
+
+.note .note-head {
+  width: 158px;
+  height: 21px;
+
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.note .title-note {
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--background);
+  font-size: 14px;
+  letter-spacing: 0;
+  /* line-height: normal; */
+}
+
+.note .date-note {
+  width: 67px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #7f7f7f;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+
+  margin-left: 10px;
+}
+
+.note .body-note {
+  width: 278px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #7f7f7f;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+}

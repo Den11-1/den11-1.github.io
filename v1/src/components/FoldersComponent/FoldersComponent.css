@@ -44,10 +44,15 @@
   line-height: normal;
 }
 
+.foldersComponent .category {
+  margin-left: 20px;
+}
+
 .foldersComponent .category-head {
   display: flex;
   justify-content: space-between;
-  margin: 19px;
+  margin: 20px;
+  margin-left: 0;
   width: 323px;
   height: 30px;
 }
@@ -76,52 +81,4 @@
   margin-top: 10px;
   width: 24px;
   height: 13px;
-}
-
-.foldersComponent .note {
-  width: 280px;
-  /* height: 65px; */
-
-  margin-left: 40px;
-  margin-bottom: 20px
-}
-
-.foldersComponent .note-head {
-  width: 158px;
-  height: 21px;
-
-  display: flex;
-  margin-bottom: 5px;
-}
-
-.foldersComponent .title-note {
-  font-family: "Poppins", Helvetica;
-  font-weight: 500;
-  color: var(--background);
-  font-size: 14px;
-  letter-spacing: 0;
-  /* line-height: normal; */
-}
-
-.foldersComponent .date-note {
-  width: 67px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 500;
-  color: #7f7f7f;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 16px;
-  white-space: nowrap;
-
-  margin-left: 10px;
-}
-
-.foldersComponent .body-note {
-  width: 278px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 500;
-  color: #7f7f7f;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 16px;
 }

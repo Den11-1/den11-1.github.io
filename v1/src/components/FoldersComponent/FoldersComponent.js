@@ -1,6 +1,6 @@
 import './FoldersComponent.css';
 import { Link } from "react-router-dom";
-import Note from './Note';
+import Note from '../Note/Note';
 import { useEffect, useState } from 'react';
 import Category from './Category';
 import { showAllNotesForCurrentUser } from '../../firebase';

@@ -1,4 +1,4 @@
-import Note from './Note';
+import Note from '../Note/Note';
 import { useEffect, useState } from 'react';
 
 export default function Category({ category }) {
