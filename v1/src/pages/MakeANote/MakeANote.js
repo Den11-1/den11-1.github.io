@@ -1,7 +1,7 @@
 import './MakeANote.css';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { addNoteForCurrentUser } from "./addNoteForCurrentUser"; // імпортуй свою функцію
+import { addNoteForCurrentUser } from "./addNoteForCurrentUser";
 
 export default function MakeANote() {
     const [title, setTitle] = useState("");
@@ -46,24 +46,27 @@ export default function MakeANote() {
                         <img className="voice" src="https://c.animaapp.com/maoez0i4MW0y0J/img/voice-1.png" alt="Voice" />
                     </div>
                 </div>
-                <form className="note-form" onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        placeholder="Заголовок"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        className="note-title"
-                    />
-                    <textarea
-                        placeholder="Ваша нотатка..."
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                        className="note-content"
-                        rows={5}
-                    />
-                    <button type="submit" className="note-save-btn">Зберегти нотатку</button>
-                    {message && <div className="note-message">{message}</div>}
-                </form>
+                {/* Форма нотатки */}
+                <div className="note-form-wrapper">
+                    <form className="note-form" onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            placeholder="Заголовок"
+                            value={title}
+                            onChange={(e) => setTitle(e.target.value)}
+                            className="note-title"
+                        />
+                        <textarea
+                            placeholder="Ваша нотатка..."
+                            value={content}
+                            onChange={(e) => setContent(e.target.value)}
+                            className="note-content"
+                            rows={5}
+                        />
+                        <button type="submit" className="note-save-btn">Зберегти нотатку</button>
+                        {message && <div className="note-message">{message}</div>}
+                    </form>
+                </div>
             </div>
         </div>
     );
