@@ -4,7 +4,7 @@ import AdditionalOptions from '../../components/AdditionalOptions/AdditionalOpti
 import HomeFolders from '../../components/HomeFolders/HomeFolders';
 import FoldersComponent from '../../components/FoldersComponent/FoldersComponent';
 import NavBar from '../../components/NavBar/NavBar';
-import { auth } from "../../firebase";
+import { addNoteForCurrentUser, auth, showAllNotesForCurrentUser } from "../../firebase";
 import { useState, useEffect } from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 
@@ -19,7 +19,15 @@ export default function Home() {
         // Відстеження автентифікації користувача
         const unsubscribe = onAuthStateChanged(auth, (user) => {
         setCurrentUser(user);
+        // addNoteForCurrentUser("Це тестова нотатка для поточного користувача").then(() => {
+        //     console.log("Тестова нотатка додана");
+        // });
+        // showAllNotesForCurrentUser().then((notes) => {
+        //     console.log("Всі нотатки користувача:", notes);
+        // });
         });
+
+        
 
         // loadComments(setComments, setLoading);
         return () => unsubscribe();

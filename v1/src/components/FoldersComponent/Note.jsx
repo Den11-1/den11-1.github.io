@@ -5,7 +5,7 @@ export default function Note({ note }) {
                 <div class="title-note">{note.title}</div>
                 <div class="date-note">{note.date}</div>
             </div>
-            <div class="body-note">{note.body}</div>
+            <div class="body-note">{note.content}</div>
         </div>
     )
 }
